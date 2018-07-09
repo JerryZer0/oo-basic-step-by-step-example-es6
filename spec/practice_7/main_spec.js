@@ -25,9 +25,9 @@ describe("Person", () => {
     describe("Student", () => {
         let klass;
 
-        before(() => {
+        //before(() => {
            klass = new Class(2); 
-        });
+        //});
 
         it("should have field name, age and class number", () => {
             const student = new Student("Tom", 21, klass);
@@ -46,9 +46,9 @@ describe("Person", () => {
     describe("Teacher", () => {
         let klass;
 
-        before(() => {
+        //before(() => {
             klass = new Class(2);
-        });
+        //});
 
         it("should have field name, age and class number", () => {
             const teacher = new Teacher("Tom", 21, klass);
@@ -74,9 +74,9 @@ describe("Person", () => {
         describe("#introduceWith", () => {
             let studentJerry;
 
-            before(() => {
+            //before(() => {
                 studentJerry = new Student("Jerry", 8, klass);
-            });
+            //});
 
             it("should return I am teaching some guy, given my class is same with this guy's class", () => {
                 const teacher = new Teacher("Tom", 21, klass);

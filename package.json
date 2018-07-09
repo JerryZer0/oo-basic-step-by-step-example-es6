@@ -13,12 +13,15 @@
   },
   "homepage": "https://school.thoughtworks.cn",
   "scripts": {
-    "test": "mocha spec/**/*.js --require babel/register --require source-map-support/register"
+    "test": "jasmine-node --verbose specs",
+    "test-single": "jasmine-node --verbose "
   },
   "dependencies": {
+    "jasmine-node": "1.14.5",
     "lodash": "3.9.3"
   },
   "devDependencies": {
+    "jasmine": "^2.99.0",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
     "sinon": "^6.1.3",
