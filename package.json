@@ -13,8 +13,7 @@
   },
   "homepage": "https://school.thoughtworks.cn",
   "scripts": {
-    "test": "jasmine-node --verbose specs",
-    "test-single": "jasmine-node --verbose "
+    "test": "mocha spec/**/*.js --require babel/register --require source-map-support/register"
   },
   "dependencies": {
     "jasmine-node": "1.14.5",
